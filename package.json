@@ -1,0 +1,25 @@
+{
+  "name": "movie-web",
+  "version": "1.0.0",
+  "description": "Movie web, allows you to watch trailer of trending movies.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -w scss/main.scss css/style.css",
+    "test": "live-server",
+    "start": "npm-run-all --parallel watch test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adebesin-Cell/movie-web.git"
+  },
+  "author": "Tolulope",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adebesin-Cell/movie-web/issues"
+  },
+  "homepage": "https://github.com/Adebesin-Cell/movie-web#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "npm-run-all": "^4.1.5"
+  }
+}
