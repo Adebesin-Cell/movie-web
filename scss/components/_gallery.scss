@@ -1,0 +1,22 @@
+.gallery {
+      &__image-box {
+            margin-bottom: 1.6rem;
+      }
+      &__header {
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 2.2rem;
+            letter-spacing: 0em;
+            color: var(--white);
+      }
+      &__date {
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 1;
+            line-height: 2.2rem;
+            letter-spacing: 0em;
+            text-align: left;
+            color: var(--white);
+      }
+}

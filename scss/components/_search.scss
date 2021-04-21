@@ -1,0 +1,30 @@
+.search {
+      margin-right: auto;
+      margin-left: 7.4rem;
+      display: flex;
+      align-items: center;
+      &__input {
+            padding: .8rem 1.9rem;
+            height: 3.7rem;
+            font-size: 1.8rem;
+            font-weight: 100;
+            font-family: inherit;
+            background: transparent;
+            border: .99px solid var(--white);
+            outline: none;
+            border-radius: 5px;
+            width: 37rem;
+            color: var(--white);
+            transition: all .3s ease;
+
+            &:focus {
+                  border: .99px solid var(--orange);
+                  width: 38.85rem;
+            }
+      }
+      &__icon {
+            width: 1.6rem;
+            height: 1.6rem;
+            margin-left: -3.5rem;
+      }
+}

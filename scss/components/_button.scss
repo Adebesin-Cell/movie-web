@@ -1,0 +1,33 @@
+.btn {
+      &,
+      &:link,
+      &:visited {
+            padding: 1rem 2rem;
+            color: var(--white);
+            font-size: 1.8rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            border-radius: 5px;
+      }
+
+      &--orange {
+            background-color: var(--orange);
+
+      }
+
+      &--watch {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--dark-gray);
+            width: 50%;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+      }
+
+      &__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      }
+}

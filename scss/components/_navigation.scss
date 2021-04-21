@@ -1,0 +1,31 @@
+.navigation {
+      display: flex;
+      align-items: center;
+      &__list {
+            display: flex;
+            align-items: center;
+            align-self: center;
+            list-style-type: none;
+            margin-bottom: 0;
+      }
+
+      &__link {
+            &,
+            &:link,
+            &:visited {
+                  display: inline-block;
+                  padding: 1rem 2rem;
+                  text-decoration: none;
+                  text-transform: uppercase;
+                  color: var(--white);
+                  height: 100%;
+                  font-size: 1.8rem;
+                  font-style: normal;
+                  font-weight: 300;
+                  line-height: 2.2rem;
+                  letter-spacing: 0em;
+                  text-align: left;
+
+            }
+      }
+}

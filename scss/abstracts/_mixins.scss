@@ -1,1 +1,18 @@
+@mixin root {
+      :root {
+            --black: #04000E;
+            --white: #FFFFFF;
+            --dark-gray: #1A1A1A;
+            --orange: #F29913;
+            --icon-dark: #8D8D8D;
 
+      }
+}
+
+@mixin header_padding {
+      & {
+            padding-top: 4.8rem;
+            padding-right: 6rem;
+            padding-left: 4.4rem;
+      }
+}

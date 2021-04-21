@@ -1,0 +1,9 @@
+.rating {
+      display: flex;
+
+      &__stars {
+            cursor: pointer;
+            margin-right: 4px;
+      }
+      margin-bottom: 2.4rem;
+}

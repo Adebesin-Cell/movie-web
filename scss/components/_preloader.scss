@@ -1,0 +1,39 @@
+.preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--black);
+      z-index: 999999;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity .5s ease;
+
+      &__item {
+            border: 6px solid var(--white);
+            border-top: 6px solid var(--orange);
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            animation: spin 1s ease infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+      }
+}
+.fade {
+      opacity: 0;
+      pointer-events: none;
+}
+
+@keyframes spin {
+      from{
+            transform: rotate(0deg);
+      }
+      to {
+            transform: rotate(360deg);
+      }
+}

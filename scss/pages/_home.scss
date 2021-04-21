@@ -1,1 +1,22 @@
-ECHO is on.
+.wrapper {
+      background-image: url(/images/Legacy-of-Lies-movie+++1.png);
+      background-color: var(--black);
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+      width: 100vw;
+}
+.section-intro {
+      padding-top: 19.4rem;
+      padding-left: 4.4rem;
+      padding-bottom: 15.4rem;
+}
+
+.section-movie-gallery {
+      background-color: var(--black);
+      padding-left: 15.9rem;
+      flex-wrap: nowrap;
+      align-items: center;
+      width: 100vw;
+      padding-bottom: 6rem;
+}
