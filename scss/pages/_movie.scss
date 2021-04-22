@@ -8,15 +8,11 @@
             flex: 0 0 10%;
       }
       &__navigation {
-            &-list {
-
-            }
             &-item {
                   cursor: pointer;
                   transition: all .5s ease;
                   display: flex;
                   align-items: center;
-                  // justify-content: space-between;
                   margin-bottom: 2.5rem;
             }
 

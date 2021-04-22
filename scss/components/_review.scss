@@ -1,0 +1,15 @@
+.review {
+      display: flex;
+      margin-bottom: 0;
+
+      font-size: 1.4rem;
+      line-height: 1.7rem;
+      margin-right: .9rem;
+      margin-left: .9rem;
+      color: var(--white);
+
+      &__number {
+            margin-right: .9rem;
+      }
+
+}

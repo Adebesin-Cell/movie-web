@@ -5,6 +5,13 @@
   padding: 0;
   box-sizing: inherit; }
 
+:root {
+  --black: #04000E;
+  --white: #FFFFFF;
+  --dark-gray: #1A1A1A;
+  --orange: #F29913;
+  --icon-dark: #8D8D8D; }
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -12,13 +19,6 @@ html {
 
 body {
   overflow-x: hidden; }
-
-:root {
-  --black: #04000E;
-  --white: #FFFFFF;
-  --dark-gray: #1A1A1A;
-  --orange: #F29913;
-  --icon-dark: #8D8D8D; }
 
 ::selection {
   background-color: var(--white);
@@ -47,6 +47,8 @@ body {
     line-height: 2rem;
     letter-spacing: 0em;
     text-align: left; }
+  .heading-primary--movie {
+    margin-bottom: 1.6rem; }
 
 .paragraph {
   font-size: 1.8rem;
@@ -69,6 +71,12 @@ body {
     display: block; }
   .heading-secondary--sub {
     text-align: right; }
+  .heading-secondary--active {
+    color: var(--orange);
+    display: inline-block !important;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    margin-left: 2px; }
 
 .u-flex {
   display: flex; }
@@ -88,6 +96,9 @@ body {
 
 .u-mr-sm {
   margin-right: 3.43rem; }
+
+.u-mb-md {
+  margin-bottom: 3.1rem; }
 
 .btn, .btn:link, .btn:visited {
   padding: 1rem 2rem;
@@ -274,6 +285,51 @@ body {
 .gallery__link, .gallery__link:link, .gallery__link:visited {
   text-decoration: none; }
 
+.movie__show {
+  background-image: url(/images/bg_extraction.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 115%;
+  padding-top: 2.3rem;
+  padding-left: 5.6rem;
+  padding-bottom: 4.7rem; }
+
+.movie__details {
+  display: flex;
+  align-items: center; }
+
+.movie__date {
+  margin-bottom: 0;
+  color: var(--white);
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  margin-right: .7rem; }
+
+.movie__time {
+  display: flex; }
+  .movie__time-number {
+    color: var(--white);
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    align-self: center; }
+
+.movie__icon {
+  margin-right: .7rem; }
+
+.movie__paragraph {
+  margin-top: 3.4rem;
+  color: var(--white);
+  font-weight: 200;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  margin-bottom: 2.9rem;
+  width: 90%; }
+
+.movie__gallery {
+  padding-top: 2.1rem;
+  padding-left: 7.4rem;
+  width: 115%; }
+
 .navigation {
   display: flex;
   align-items: center; }
@@ -376,6 +432,17 @@ body {
     cursor: pointer;
     margin-right: 4px; }
 
+.review {
+  display: flex;
+  margin-bottom: 0;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  margin-right: .9rem;
+  margin-left: .9rem;
+  color: var(--white); }
+  .review__number {
+    margin-right: .9rem; }
+
 .search {
   margin-right: auto;
   margin-left: 7.4rem;
@@ -430,6 +497,11 @@ body {
     padding-top: 4.8rem;
     padding-right: 6rem;
     padding-left: 4.4rem; }
+
+.section-movie-show {
+  height: 100%;
+  flex: 0 0 80%;
+  max-width: 80%; }
 
 .wrapper {
   background-image: url(/images/Legacy-of-Lies-movie+++1.png);

@@ -1,0 +1,53 @@
+.movie {
+
+      &__show {
+            background-image: url(/images/bg_extraction.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 115%;
+            padding-top: 2.3rem;
+            padding-left: 5.6rem;
+            padding-bottom: 4.7rem;
+      }
+
+      &__details {
+            display: flex;
+            align-items: center;
+      }
+      &__date {
+            margin-bottom: 0;
+            color: var(--white);
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            margin-right: .7rem;
+      }
+      &__time {
+            display: flex;
+            &-number {
+                  color: var(--white);
+                  font-size: 1.4rem;
+                  line-height: 1.7rem;
+                  align-self: center;
+            }
+      }
+
+      &__icon {
+            margin-right: .7rem;
+      }
+      &__paragraph {
+            margin-top: 3.4rem;
+            color: var(--white);
+            font-weight: 200;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            margin-bottom: 2.9rem;
+            width: 90%;
+      }
+
+      &__gallery {
+            padding-top: 2.1rem;
+            padding-left: 7.4rem;
+            width: 115%;
+      }
+
+}
