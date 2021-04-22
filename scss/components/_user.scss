@@ -1,0 +1,26 @@
+.user {
+      align-self: center;
+
+      &__info {
+            display: flex;
+            align-items: center;
+      }
+
+      &__name {
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 2.2rem;
+            letter-spacing: 0em;
+            color: var(--white);
+            margin-right: 1.6rem;
+            align-self: center;
+            margin-bottom: 0;
+      }
+
+      &__image {
+            display: block;
+            width: 100%;
+            border-radius: 50%;
+      }
+}

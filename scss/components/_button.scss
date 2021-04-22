@@ -31,3 +31,17 @@
             justify-content: center;
       }
 }
+.button{
+      font-family: "Open Sans", sans-serif;
+      border: 1px solid var(--orange);
+      outline: none;
+      width: 100%;
+      padding: 1rem 0;
+      border-radius: 5px;
+      background-color: var(--orange);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      letter-spacing: .02em;
+}

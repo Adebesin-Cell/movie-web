@@ -19,4 +19,15 @@
             text-align: left;
             color: var(--white);
       }
+      &__movie {
+            margin-bottom: 6.5rem;
+            cursor: pointer;
+      }
+      &__link {
+            &,
+            &:link,
+            &:visited {
+                  text-decoration: none;
+            }
+      }
 }

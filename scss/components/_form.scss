@@ -3,6 +3,7 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      padding-bottom: 5rem;
       // padding-left: 28.3rem;
       &__list {
             display: flex;
@@ -70,6 +71,39 @@
 
       &__input:focus + &__icon {
             fill: var(--orange);
+      }
+
+      &__cta {
+            width: 39.3rem;
+            display: flex;
+            padding-bottom: 7rem;
+            justify-content: space-between;
+            &__link {
+                  &,
+                  &:link,
+                  &:visited {
+                        font-size: 1.2rem;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 1.5rem;
+                        letter-spacing: 0.02em;
+                        color: #8D8D8D;
+                        text-decoration: none;
+                  }
+                  
+            }
+      }
+
+      &__btn-box {
+            width: 39.3rem;
+            padding-bottom: 6.5rem;
+      }
+
+      &__icon-box {
+            width: 39.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
       }
 
 }

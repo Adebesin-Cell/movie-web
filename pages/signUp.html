@@ -12,6 +12,9 @@
       <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+      <div class="preloader">
+            <div class="preloader__item"></div>
+      </div>
       <div class="container-fluid pl-0 main">
             <div class="row">
                   <div class="col-md-12">
@@ -29,7 +32,7 @@
             </div>
             <section class="row section-form">
                 <div class="container">
-                      <form action="trending-movie.html" class="form" method="post">
+                      <form action="trending-movie.html" class="form">
                             <ul class="form__list">
                                   <li class="form__item ">
                                         <a href="login.html" class="form__link inactive">
@@ -37,28 +40,97 @@
                                         </a>
                                   </li>
                                   <li class="form__item active">
-                                    <a href="signUp.html" class="form__link active">
+                                    <a href="signUp.html" class="form__link  active">
                                           Sign up
                                     </a>
                               </li>
                             </ul>
                             <div class="form__group">
-                                  <input type="email" required class="form__input" placeholder="Email or Phone number">
+                                  <input type="email"  class="form__input" placeholder="Email or Phone number">
                             </div>
                             <div class="form__group u-mt-md u-mb-sm">
-                                  <input type="password" required class="form__input" placeholder="Password">
+                                  <input type="password" class="form__input" placeholder="Password">
                                   <svg class="form__icon" width="27" height="22" viewBox="0 0 27 22" fill="var(--icon-dark)" xmlns="http://www.w3.org/2000/svg">
                                           <path d="M9.45 11C10.518 11 11.5621 10.6774 12.4501 10.0731C13.3381 9.46874 14.0302 8.60975 14.4389 7.60476C14.8477 6.59977 14.9546 5.4939 14.7462 4.42701C14.5379 3.36011 14.0236 2.3801 13.2684 1.61091C12.5132 0.841726 11.551 0.317902 10.5035 0.105683C9.45599 -0.106535 8.37023 0.00238306 7.38351 0.418665C6.39679 0.834947 5.55342 1.5399 4.96006 2.44437C4.3667 3.34884 4.05 4.41221 4.05 5.5C4.05 6.95869 4.61893 8.35764 5.63162 9.38909C6.64432 10.4205 8.01783 11 9.45 11ZM13.5 13.75C13.503 13.2907 13.6206 12.8398 13.8417 12.4395C13.6392 12.418 13.4409 12.375 13.23 12.375H12.5255C11.5612 12.8279 10.5119 13.0625 9.45 13.0625C8.3881 13.0625 7.33883 12.8279 6.37453 12.375H5.67C4.16633 12.3753 2.72433 12.9839 1.66108 14.0668C0.597817 15.1498 0.000335529 16.6185 0 18.15L0 19.9375C0 20.4845 0.213348 21.0091 0.593109 21.3959C0.97287 21.7827 1.48794 22 2.025 22H13.8755C13.6328 21.5837 13.5032 21.1091 13.5 20.625V13.75ZM25.65 12.375H24.3V8.9375C24.3 8.02582 23.9444 7.15148 23.3115 6.50682C22.6786 5.86217 21.8201 5.5 20.925 5.5C20.0299 5.5 19.1714 5.86217 18.5385 6.50682C17.9056 7.15148 17.55 8.02582 17.55 8.9375V12.375H16.2C15.842 12.375 15.4986 12.5199 15.2454 12.7777C14.9922 13.0356 14.85 13.3853 14.85 13.75V20.625C14.85 20.9897 14.9922 21.3394 15.2454 21.5973C15.4986 21.8551 15.842 22 16.2 22H25.65C26.008 22 26.3514 21.8551 26.6046 21.5973C26.8578 21.3394 27 20.9897 27 20.625V13.75C27 13.3853 26.8578 13.0356 26.6046 12.7777C26.3514 12.5199 26.008 12.375 25.65 12.375ZM20.925 18.5625C20.658 18.5625 20.397 18.4819 20.175 18.3308C19.953 18.1797 19.7799 17.9649 19.6778 17.7137C19.5756 17.4624 19.5488 17.186 19.6009 16.9193C19.653 16.6525 19.7816 16.4075 19.9704 16.2152C20.1592 16.0229 20.3998 15.892 20.6616 15.8389C20.9235 15.7859 21.1949 15.8131 21.4416 15.9172C21.6883 16.0212 21.8991 16.1975 22.0475 16.4236C22.1958 16.6497 22.275 16.9156 22.275 17.1875C22.275 17.5522 22.1328 17.9019 21.8796 18.1598C21.6264 18.4176 21.283 18.5625 20.925 18.5625ZM22.275 12.375H19.575V8.9375C19.575 8.57283 19.7172 8.22309 19.9704 7.96523C20.2236 7.70737 20.567 7.5625 20.925 7.5625C21.283 7.5625 21.6264 7.70737 21.8796 7.96523C22.1328 8.22309 22.275 8.57283 22.275 8.9375V12.375Z" fill="var(--icon-dark)"/>
                                     </svg>                                    
                             </div>
                             <div class="form__cta">
-                                  &nbsp;
+                                  <div class="checkbox-box">
+                                        <input type="checkbox" class="check" name="remember me" hidden id="check">
+                                        <label for="check" class="checkbox">
+                                              <span class="checkmark"></span>
+                                              <span>
+                                                Remember me
+                                              </span>
+                                        </label>
+                                  </div>
+                                  <div class="form__cta-text">
+                                        <a href="#" class="form__cta__link">
+                                              Need help??
+                                        </a>
+                                  </div>
+                            </div>
+                            <div class="form__btn-box">
+                                  <button type="submit" class="button">
+                                          Sign Up
+                                  </button>
+                            </div>
+                            <div class="form__icon-box">
+                              <a href="#" class="form__icon--link u-mr-sm">
+                                    <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0)">
+                                    <path d="M36.8475 39.0002C38.0361 39.0002 39 38.0364 39 36.8477V2.15246C39 0.963574 38.0361 0 36.8475 0H2.15246C0.963422 0 0 0.963574 0 2.15246V36.8477C0 38.0364 0.963422 39.0002 2.15246 39.0002H36.8475Z" fill="#395185"/>
+                                    <path d="M26.9093 39V23.8971H31.9789L32.7379 18.0113H26.9093V14.2533C26.9093 12.5492 27.3827 11.3879 29.8264 11.3879L32.9432 11.3865V6.12228C32.4039 6.05052 30.5539 5.89026 28.4015 5.89026C23.9077 5.89026 20.8313 8.63321 20.8313 13.6706V18.0113H15.7488V23.8971H20.8313V39H26.9093Z" fill="white"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0">
+                                    <rect width="39" height="39" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>                                           
+                              </a>
+                              <a href="#" class="form__icon--link">
+                                    <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <g clip-path="url(#clip0)">
+                                          <g filter="url(#filter0_dd)">
+                                          <path d="M37.6289 0.302368H1.37109C0.782134 0.302368 0.304688 0.776113 0.304688 1.36051V37.3372C0.304688 37.9216 0.782134 38.3954 1.37109 38.3954H37.6289C38.2179 38.3954 38.6953 37.9216 38.6953 37.3372V1.36051C38.6953 0.776113 38.2179 0.302368 37.6289 0.302368Z" fill="#DC4E41"/>
+                                          </g>
+                                          <path d="M15.661 18.3966V20.6822H19.4713C19.3177 21.6631 18.3195 23.5582 15.661 23.5582C13.3671 23.5582 11.4956 21.6726 11.4956 19.3489C11.4956 17.0252 13.3671 15.1396 15.661 15.1396C16.9663 15.1396 17.8397 15.692 18.3387 16.1681L20.1623 14.4254C18.9914 13.3397 17.4749 12.6826 15.661 12.6826C11.9467 12.6826 8.94263 15.6634 8.94263 19.3489C8.94263 23.0344 11.9467 26.0152 15.661 26.0152C19.5384 26.0152 22.1106 23.3106 22.1106 19.5013C22.1106 19.0632 22.0626 18.7299 22.005 18.3966H15.661Z" fill="white"/>
+                                          <path opacity="0.4" d="M15.661 18.5108H22.005C22.0722 18.8251 22.1106 19.1584 22.1106 19.5584V19.4917C22.1106 19.0537 22.0626 18.7204 22.005 18.387H15.661V18.5108ZM15.661 12.7969C17.4366 12.7969 18.9338 13.435 20.0855 14.4825L20.1527 14.4158C18.9914 13.3397 17.4749 12.6826 15.661 12.6826C11.9467 12.6826 8.94263 15.6634 8.94263 19.3489V19.406C8.98102 15.7586 11.9755 12.7969 15.661 12.7969ZM15.661 23.6724C18.3195 23.6724 19.3177 21.7868 19.4713 20.7964H19.4425C19.2313 21.8059 18.2236 23.5486 15.661 23.5486C13.3863 23.5486 11.534 21.6916 11.5052 19.406C11.5052 19.4251 11.4956 19.4441 11.4956 19.4632C11.4956 21.7868 13.3671 23.6724 15.661 23.6724Z" fill="white"/>
+                                          <path opacity="0.1" d="M15.661 15.1396C13.3671 15.1396 11.4956 17.0252 11.4956 19.3489C11.4956 19.368 11.5052 19.387 11.5052 19.4061C11.534 17.111 13.3863 15.2634 15.661 15.2634C16.9663 15.2634 17.8397 15.8158 18.3387 16.292L20.1623 14.5492C20.1431 14.5302 20.1143 14.5111 20.0951 14.4921L18.3387 16.1777C17.8397 15.7015 16.9663 15.1396 15.661 15.1396ZM15.661 20.6822V20.7965H19.4425C19.4521 20.7584 19.4617 20.7107 19.4713 20.6822H15.661Z" fill="#3E2723"/>
+                                          <path opacity="0.1" d="M15.661 26.0152C11.9755 26.0152 8.98102 23.0629 8.94263 19.406V19.4631C8.94263 23.1487 11.9467 26.1294 15.661 26.1294C19.5384 26.1294 22.1106 23.4248 22.1106 19.6155V19.5584C22.0818 23.3391 19.5192 26.0152 15.661 26.0152Z" fill="#3E2723"/>
+                                          <path d="M30.0574 18.3966H28.1379V16.4919H26.2184V18.3966H24.2988V20.3012H26.2184V22.2059H28.1379V20.3012H30.0574" fill="white"/>
+                                          <path opacity="0.4" d="M28.1379 18.3966H30.0574V18.5109H28.1379V18.3966ZM26.2184 16.4919H28.1379V16.6062H26.2184V16.4919ZM24.2988 18.3966H26.2184V18.5109H24.2988V18.3966Z" fill="white"/>
+                                          <path opacity="0.1" d="M24.2988 20.3011H26.2184V20.4154H24.2988V20.3011ZM28.1379 20.3011H30.0574V20.4154H28.1379V20.3011ZM26.2184 22.2058H28.1379V22.3201H26.2184V22.2058Z" fill="#3E2723"/>
+                                          </g>
+                                          <defs>
+                                          <filter id="filter0_dd" x="-1.69531" y="-1.69763" width="42.3906" height="44.093" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                          <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                          <feOffset dy="2"/>
+                                          <feGaussianBlur stdDeviation="1"/>
+                                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.168 0"/>
+                                          <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                                          <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+                                          <feOffset/>
+                                          <feGaussianBlur stdDeviation="1"/>
+                                          <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.084 0"/>
+                                          <feBlend mode="normal" in2="effect1_dropShadow" result="effect2_dropShadow"/>
+                                          <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow" result="shape"/>
+                                          </filter>
+                                          <clipPath id="clip0">
+                                          <rect width="39" height="39" fill="white"/>
+                                          </clipPath>
+                                          </defs>
+                                    </svg>                                          
+                              </a>
                             </div>
                       </form>
                 </div>
             </section>
       </div>
       <script src="../assets/jquery-3.5.1.js"></script>
-      <script src="../assets/bootstrap.min.js"></script>          
+      <script src="../assets/bootstrap.min.js"></script>   
+      <script src="../Js/App.js"></script>       
 </body>
 </html>
