@@ -1,18 +1,41 @@
 @mixin root {
-      :root {
-            --black: #04000E;
-            --white: #FFFFFF;
-            --dark-gray: #1A1A1A;
-            --orange: #F29913;
-            --icon-dark: #8D8D8D;
-
-      }
+  :root {
+    --black: #04000e;
+    --white: #ffffff;
+    --dark-gray: #1a1a1a;
+    --orange: #f29913;
+    --icon-dark: #8d8d8d;
+  }
 }
 
 @mixin header_padding {
-      & {
-            padding-top: 4.8rem;
-            padding-right: 6rem;
-            padding-left: 4.4rem;
-      }
+  & {
+    padding-top: 4.8rem;
+    padding-right: 6rem;
+    padding-left: 4.4rem;
+  }
+}
+
+@mixin responsive($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tabletPortrait {
+    @media only screen and (max-width: 900px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tabletLandscape {
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == bigDesktop {
+    @media only screen and (min-width: 1800px) {
+      @content;
+    }
+  }
 }

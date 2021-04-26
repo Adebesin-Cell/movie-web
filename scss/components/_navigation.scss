@@ -1,6 +1,7 @@
 .navigation {
       display: flex;
       align-items: center;
+
       &__list {
             display: flex;
             align-items: center;
@@ -10,6 +11,7 @@
       }
 
       &__link {
+
             &,
             &:link,
             &:visited {

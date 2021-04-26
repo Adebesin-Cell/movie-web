@@ -1,75 +1,74 @@
 .movie {
+  &-page {
+    background-color: var(--black);
+    height: 100%;
+  }
+  &__navigation-box {
+    flex: 0 0 10%;
+    max-width: 15%;
+  }
+  &__navigation {
+    &-item {
+      cursor: pointer;
+      transition: all 0.5s ease;
+      display: flex;
+      align-items: center;
+      margin-bottom: 2.5rem;
+    }
 
-      &-page {
-            background-color: var(--black);
-            height: 100%;
+    &-link {
+      &,
+      &:link,
+      &:visited {
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 100;
+        line-height: 2.2rem;
+        letter-spacing: 0em;
+        color: var(--white);
+        text-decoration: none;
+        transition: all 0.5s ease;
       }
-      &__navigation-box {
-            flex: 0 0 10%;
+      &.active {
+        color: var(--orange);
       }
-      &__navigation {
-            &-item {
-                  cursor: pointer;
-                  transition: all .5s ease;
-                  display: flex;
-                  align-items: center;
-                  margin-bottom: 2.5rem;
-            }
-
-            &-link {
-                  &,
-                  &:link,
-                  &:visited
-                   {
-                        font-size: 1.8rem;
-                        font-style: normal;
-                        font-weight: 100;
-                        line-height: 2.2rem;
-                        letter-spacing: 0em;
-                        color: var(--white);
-                        text-decoration: none;
-                        transition: all .5s ease;
-                   }
-                   &.active {
-                         color:var(--orange);
-                   }
-            }
-            &-icon {
-                  opacity: 0;
-                  pointer-events: none;
-                  transition: all .5s ease;
-                  margin-left: 3rem;
-                  &.active {
-                        opacity: 1;
-                        pointer-events: all;
-                        margin-left: 7.8rem;
-                  }
-            }
-            &-item:hover &-icon {
-                  opacity: 1;
-                  pointer-events: all;
-            }
-            &-item:hover &-link {
-                  color: var(--orange);
-            }
+    }
+    &-icon {
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.5s ease;
+      margin-left: 3rem;
+      &.active {
+        opacity: 1;
+        pointer-events: all;
+        margin-left: 7.8rem;
       }
+    }
+    &-item:hover &-icon {
+      opacity: 1;
+      pointer-events: all;
+    }
+    &-item:hover &-link {
+      color: var(--orange);
+    }
+  }
 }
 .section-movie {
-      padding-top: 5.6rem;
-      padding-left: 4.5rem;
-      display: flex;
-      flex-wrap: wrap;
-      // padding-right: 6rem;
+  padding-top: 5.6rem;
+  padding-left: 4.5rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 .trending {
-      flex: 0 0 90%;
-      max-width: 87%;
-      padding-left: 5rem;
+  flex: 0 0 90%;
+  max-width: 80%;
+  padding-left: 5rem;
 
-      &__movies {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-      }
+  &__movies {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-right: 5rem;
+  }
 }
